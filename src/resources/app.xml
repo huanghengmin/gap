@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<application>
+    <tcp>
+        <server id="1">
+            <task>1</task>
+            <ip>192.168.2.10</ip>
+            <port>8888</port>
+            <band/>
+        </server>
+        <client id="1">
+            <task>1</task>
+            <ip>192.168.2.11</ip>
+            <port>8888</port>
+            <start>09:00</start>
+            <end>18:00</end>
+            <run>是</run>
+            <describe>tcp信令通道</describe>
+        </client>
+        <server id="2">
+            <task>2</task>
+            <ip>192.168.2.10</ip>
+            <port>8888</port>
+            <band/>
+        </server>
+        <client id="2">
+            <task>2</task>
+            <ip>192.168.2.11</ip>
+            <port>8000</port>
+            <start>19:00</start>
+            <end>23:00</end>
+            <run>是</run>
+            <describe>tcp信令通道2</describe>
+        </client>
+        <server id="2">
+            <task>2</task>
+            <ip>192.168.2.10</ip>
+            <port>8888</port>
+            <band/>
+        </server>
+        <client id="3">
+            <task>3</task>
+            <ip>192.168.2.11</ip>
+            <port>8080</port>
+            <start>00:00</start>
+            <end>23:59</end>
+            <run>是</run>
+            <describe>tcp信令通道3</describe>
+        </client>
+    </tcp>
+    <udp>
+        <server id="1">
+            <task>1</task>
+            <ip>192.168.2.10</ip>
+            <port>800</port>
+            <band/>
+        </server>
+        <client id="1">
+            <task>1</task>
+            <ip>192.168.2.11</ip>
+            <port>8000</port>
+            <start>09:00</start>
+            <end>18:00</end>
+            <run>是</run>
+            <describe>udp视频单向通道</describe>
+        </client>
+        <server id="2">
+            <task>2</task>
+            <ip>192.168.2.10</ip>
+            <port>8000</port>
+            <band/>
+        </server>
+        <client id="2">
+            <task>2</task>
+            <ip>192.168.2.11</ip>
+            <port>8000</port>
+            <start>19:00</start>
+            <end>23:00</end>
+            <run>是</run>
+            <describe>udp视频单向通道2</describe>
+        </client>
+    </udp>
+    <access>
+        <control id ="1">
+            <clientip>any</clientip>
+            <clientport>any</clientport>
+            <targetip>192.168.2.10</targetip>
+            <targetport>8888</targetport>
+            <allow>true</allow>
+        </control>
+        <control id ="2">
+            <clientip>any</clientip>
+            <clientport>any</clientport>
+            <targetip>192.168.2.11</targetip>
+            <targetport>8000</targetport>
+            <allow>true</allow>
+        </control>
+    </access>
+    <tunnels>
+
+    </tunnels>
+</application>

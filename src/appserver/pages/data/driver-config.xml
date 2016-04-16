@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <database>
+        <name value="mssql" key="MicroSoft SqlServer">
+            <versions>
+                <version name="2000">
+                    <drivers>
+                        <driver name="com.microsoft.jdbc.sqlserver.SQLServerDriver">
+                            <vender>MICROSOFT</vender>
+                            <defaultport>1433</defaultport>
+                            <url>jdbc:microsoft:sqlserver://{0}:{1};DatabaseName={2}</url>
+                            <catalog></catalog>
+                        </driver>
+                        <driver name="net.sourceforge.jtds.jdbc.Driver">
+                            <vender>JTDS</vender>
+                            <defaultport>1433</defaultport>
+                            <url>jdbc:jtds:sqlserver://{0}:{1}/{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                    </drivers>
+                </version>
+                <version name="2005">
+                    <drivers>
+                        <driver name="com.microsoft.sqlserver.jdbc.SQLServerDriver">
+                            <vender>MICROSOFT</vender>
+                            <defaultport>1433</defaultport>
+                            <url>jdbc:sqlserver://{0}:{1};DatabaseName={2}</url>
+                            <catalog></catalog>
+                        </driver>
+                        <driver name="net.sourceforge.jtds.jdbc.Driver">
+                            <vender>JTDS</vender>
+                            <defaultport>1433</defaultport>
+                            <url>jdbc:jtds:sqlserver://{0}:{1}/{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                    </drivers>
+                </version>
+                <version name="2008">
+                    <drivers>
+                        <driver name="com.microsoft.sqlserver.jdbc.SQLServerDriver">
+                            <vender>MICROSOFT</vender>
+                            <defaultport>1433</defaultport>
+                            <url>jdbc:sqlserver://{0}:{1};DatabaseName={2}</url>
+                            <catalog></catalog>
+                        </driver>
+                        <driver name="net.sourceforge.jtds.jdbc.Driver">
+                            <vender>JTDS</vender>
+                            <defaultport>1433</defaultport>
+                            <url>jdbc:jtds:sqlserver://{0}:{1}/{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                    </drivers>
+                </version>
+            </versions>
+        </name>
+    </database>
+    <database>
+        <name value='oracle' key="Oracle">
+            <versions>
+                <version name="8i">
+                    <drivers>
+                        <driver name="oracle.jdbc.driver.OracleDriver">
+                            <vender>ORACLE</vender>
+                            <defaultport>1521</defaultport>
+                            <url>jdbc:oracle:thin:@{0}:{1}:{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                    </drivers>
+                </version>
+                <version name="9i">
+                    <drivers>
+                        <driver name="oracle.jdbc.driver.OracleDriver">
+                            <vender>ORACLE</vender>
+                            <defaultport>1521</defaultport>
+                            <url>jdbc:oracle:thin:@{0}:{1}:{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                    </drivers>
+                </version>
+                <version name="10g">
+                    <drivers>
+                        <driver name="oracle.jdbc.driver.OracleDriver">
+                            <vender>ORACLE</vender>
+                            <defaultport>1521</defaultport>
+                            <url>jdbc:oracle:thin:@{0}:{1}:{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                        <driver name="oracle.jdbc.OracleDriver">
+                            <vender>ORACLE</vender>
+                            <defaultport>1521</defaultport>
+                            <url>jdbc:oracle:thin:@{0}:{1}:{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                    </drivers>
+                </version>
+                <version name="11g">
+                    <drivers>
+                        <driver name="oracle.jdbc.driver.OracleDriver">
+                            <vender>ORACLE</vender>
+                            <defaultport>1521</defaultport>
+                            <url>jdbc:oracle:thin:@{0}:{1}/{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                        <driver name="oracle.jdbc.OracleDriver">
+                            <vender>ORACLE</vender>
+                            <defaultport>1521</defaultport>
+                            <url>jdbc:oracle:thin:@{0}:{1}:{2}</url>
+                            <catalog></catalog>
+                        </driver>
+                    </drivers>
+                </version>
+            </versions>
+        </name>
+    </database>
+<!--    <database>
+        <name value="sybase">sybase</name>
+        <versions>
+            <version name="">
+                <drivers>
+                    <driver name="">
+                        <url></url>
+                    </driver>
+                </drivers>
+            </version>
+            <version name="">
+                <drivers>
+                    <driver name="">
+                        <url></url>
+                    </driver>
+                </drivers>
+            </version>
+            <version name="">
+                <drivers>
+                    <driver name="">
+                        <url></url>
+                        <catalog></catalog>
+                    </driver>
+                </drivers>
+            </version>
+        </versions>
+    </database>
+    <database>
+        <name value="db2_net">DB2:net连接(utf-8编码/8.x)</name>
+        <versions>
+            <version name="">
+                <drivers>
+                    <driver name="">
+                        <url></url>
+                        <catalog>db2</catalog>
+                    </driver>
+                </drivers>
+            </version>
+            <version name="">
+                <drivers>
+                    <driver name="">
+                        <url></url>
+                    </driver>
+                </drivers>
+            </version>
+            <version name="">
+                <drivers>
+                    <driver name="">
+                        <url></url>
+                    </driver>
+                </drivers>
+            </version>
+        </versions>
+    </database>-->
+</config>

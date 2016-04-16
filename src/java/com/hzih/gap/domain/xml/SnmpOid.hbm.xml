@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class table="snmpoid" name="com.hzih.gap.domain.SnmpOid">
+        <id access="field" name="id" type="java.lang.Integer" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="type" column="type" access="field" type="java.lang.String"/>
+        <property name="name" column="name" access="field" type="java.lang.String"/>
+        <property name="company" column="company" access="field" type="java.lang.String"/>
+        <property name="snmpver" column="snmpver" access="field" type="java.lang.String"/>
+        <property name="cpuuse" column="cpuuse" access="field" type="java.lang.String"/>
+        <property name="disktotal" column="disktotal" access="field" type="java.lang.String"/>
+        <property name="diskuse" column="diskuse" access="field" type="java.lang.String"/>
+        <property name="memtotal" column="memtotal" access="field" type="java.lang.String"/>
+        <property name="memuse" column="memuse" access="field" type="java.lang.String"/>
+        <property name="curconn" column="curconn" access="field" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>
